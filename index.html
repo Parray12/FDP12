@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Your Name</title>
+    <meta name="description" content="Portfolio of Your Name — projects, skills and contact." />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <style>
+        :root{
+            --bg:#0f1724; --card:#0b1220; --muted:#9aa6bf; --accent:#6ee7b7;
+            --glass: rgba(255,255,255,0.03);
+            --radius:12px;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            background:linear-gradient(180deg,#07102a 0%,#0b1220 60%);
+            color:#e6eef8;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            line-height:1.5;
+        }
+
+        /* Layout */
+        .container{max-width:1100px;margin:32px auto;padding:24px}
+        header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+        .brand{display:flex;align-items:center;gap:12px}
+        .avatar{
+            width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);
+            display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#072;box-shadow:0 6px 18px rgba(0,0,0,0.5)
+        }
+        nav{display:flex;gap:12px;align-items:center}
+        nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+        nav a:hover{color:#fff;background:var(--glass)}
+
+        /* Hero */
+        .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin:28px 0;align-items:center}
+        .intro h1{margin:0;font-size:clamp(1.6rem,3.6vw,2.4rem)}
+        .lead{color:var(--muted);margin-top:8px}
+        .cta{margin-top:18px;display:flex;gap:12px}
+        .btn{
+            background:linear-gradient(90deg,var(--accent),#60a5fa);
+            color:#032; padding:10px 14px;border-radius:10px;border:none;font-weight:600;cursor:pointer;
+        }
+        .btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+        /* Cards */
+        section{margin-top:30px}
+        .grid{display:grid;gap:16px}
+        .projects .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+        .card{
+            background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+            border-radius:var(--radius);padding:14px;border:1px solid rgba(255,255,255,0.03);
+            box-shadow:0 6px 18px rgba(3,7,18,0.6);
+        }
+        .project-thumb{height:140px;border-radius:10px;background:#07122a;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600;margin-bottom:12px}
+        .tags{display:flex;flex-wrap:wrap;gap:8px}
+        .tag{font-size:12px;color:var(--muted);background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:999px}
+
+        /* Skills */
+        .skills{display:flex;gap:10px;flex-wrap:wrap}
+        .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:10px;color:var(--muted);font-weight:600;font-size:13px}
+
+        /* Contact */
+        .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+        form label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+        form input, form textarea{
+            width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);
+            background:transparent;color:inherit;font-size:14px;outline:none
+        }
+        form textarea{min-height:140px;resize:vertical}
+        .muted{color:var(--muted);font-size:13px}
+
+        footer{margin-top:36px;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
+
+        /* Responsive */
+        @media (max-width:880px){
+            .hero{grid-template-columns:1fr}
+            .contact-grid{grid-template-columns:1fr}
+            nav{display:none}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="avatar">YN</div>
+                <div>
+                    <div style="font-weight:700">Your Name</div>
+                    <div class="muted" style="font-size:13px">Frontend Engineer • UI/UX • Accessibility</div>
+                </div>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="home" aria-labelledby="intro-heading">
+                <div class="intro">
+                    <h1 id="intro-heading">Hi — I'm Your Name. I build accessible, performant web apps.</h1>
+                    <p class="lead">I design and develop production-grade interfaces with a focus on usability, performance, and clean code.</p>
+                    <div class="cta">
+                        <a class="btn" href="#contact">Work with me</a>
+                        <a class="btn outline" href="#projects">View projects</a>
+                    </div>
+
+                    <div style="margin-top:18px" class="muted">Location: City, Country • Open to remote</div>
+                </div>
+
+                <aside class="card" aria-label="Profile summary">
+                    <h3 style="margin:0 0 8px 0">Quick summary</h3>
+                    <p class="muted" style="margin:0 0 12px 0">Full-stack friendly. Prefer building small teams, shipping iteratively, and automating tests & CI.</p>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap">
+                        <div class="muted" style="font-size:13px">Email</div>
+                        <div style="font-weight:700">you@domain.com</div>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="projects" class="projects" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="grid">
+                    <article class="card" aria-labelledby="p1">
+                        <div class="project-thumb">Project A</div>
+                        <h3 id="p1" style="margin:0 0 8px 0">E-commerce UI</h3>
+                        <p class="muted" style="margin:0 0 12px 0">Design system, responsive cart flow, and performance optimizations.</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                    </article>
+
+                    <article class="card" aria-labelledby="p2">
+                        <div class="project-thumb">Project B</div>
+                        <h3 id="p2" style="margin:0 0 8px 0">Realtime Dashboard</h3>
+                        <p class="muted" style="margin:0 0 12px 0">Websockets, charts, and telemetry ingestion pipeline.</p>
+                        <div class="tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">D3</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </article>
+
+                    <article class="card" aria-labelledby="p3">
+                        <div class="project-thumb">Project C</div>
+                        <h3 id="p3" style="margin:0 0 8px 0">Micro-frontend PoC</h3>
+                        <p class="muted" style="margin:0 0 12px 0">Evaluated integration patterns and isolation strategies.</p>
+                        <div class="tags">
+                            <span class="tag">Module Federation</span>
+                            <span class="tag">Webpack</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Skills</h2>
+                <div class="card">
+                    <div class="skills" aria-hidden="false">
+                        <span class="skill">HTML & ARIA</span>
+                        <span class="skill">CSS & Layout</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">TypeScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Performance</span>
+                        <span class="skill">Testing</span>
+                        <span class="skill">CI / CD</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">About</h2>
+                <div class="card">
+                    <p class="muted" style="margin:0 0 12px 0">I focus on creating products that are inclusive and scalable. I enjoy mentoring teams, improving developer experience, and shipping high-quality software.</p>
+                    <details>
+                        <summary style="cursor:pointer">More details</summary>
+                        <p class="muted" style="margin-top:8px">Experience with modern frameworks, observability tools, and cloud deployments. Open to contract & full-time roles.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <div class="contact-grid">
+                    <div class="card">
+                        <p class="muted">Prefer email? Use the form or send a message directly:</p>
+                        <p style="margin:12px 0 0 0"><strong>you@domain.com</strong></p>
+                        <div style="margin-top:18px" class="muted">Social</div>
+                        <div style="display:flex;gap:8px;margin-top:8px">
+                            <a class="tag" href="#" aria-label="GitHub">GitHub</a>
+                            <a class="tag" href="#" aria-label="LinkedIn">LinkedIn</a>
+                            <a class="tag" href="#" aria-label="Twitter">Twitter</a>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" class="card" onsubmit="handleSubmit(event)" aria-label="Contact form">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" required placeholder="Your name" />
+
+                        <label for="email" style="margin-top:10px">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="you@domain.com" />
+
+                        <label for="message" style="margin-top:10px">Message</label>
+                        <textarea id="message" name="message" required placeholder="Brief message"></textarea>
+
+                        <div style="display:flex;gap:8px;align-items:center;margin-top:12px">
+                            <button type="submit" class="btn">Send</button>
+                            <div id="formStatus" class="muted" aria-live="polite"></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>© <span id="year"></span> Your Name</div>
+            <div class="muted">Built with clean HTML & CSS — responsive & accessible</div>
+        </footer>
+    </div>
+
+    <script>
+        // small helpers: fill year and handle mailto fallback
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function handleSubmit(e){
+            e.preventDefault();
+            const status = document.getElementById('formStatus');
+            status.textContent = 'Sending...';
+            const name = encodeURIComponent(e.target.name.value.trim());
+            const email = encodeURIComponent(e.target.email.value.trim());
+            const message = encodeURIComponent(e.target.message.value.trim());
+            // mailto fallback — replace with API endpoint in production
+            const subject = encodeURIComponent('Portfolio contact from ' + name);
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+            const mailto = `mailto:you@domain.com?subject=${subject}&body=${body}`;
+            // open mail client
+            window.location.href = mailto;
+            status.textContent = 'Opened mail client. If nothing happened, email you@domain.com directly.';
+            setTimeout(()=>status.textContent='',4000);
+        }
+
+        // keyboard shortcut to focus contact form (press 'c')
+        window.addEventListener('keydown', (e) => {
+            if (e.key.toLowerCase() === 'c' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+                document.getElementById('name').focus();
+            }
+        });
+    </script>
+</body>
+</html>
