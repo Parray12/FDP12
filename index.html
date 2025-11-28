@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Your Name</title>
-    <meta name="description" content="Portfolio of Your Name — projects, skills and contact." />
+    <title>Javid Ahmad Parray — Assistant Professor</title>
+    <meta name="description" content="Resume and portfolio of Javid Ahmad Parray — Assistant Professor, Department of Computer Science." />
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
     <style>
@@ -31,7 +31,7 @@
         .brand{display:flex;align-items:center;gap:12px}
         .avatar{
             width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);
-            display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#072;box-shadow:0 6px 18px rgba(0,0,0,0.5)
+            display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#032;box-shadow:0 6px 18px rgba(0,0,0,0.5)
         }
         nav{display:flex;gap:12px;align-items:center}
         nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
@@ -74,6 +74,9 @@
         }
         form textarea{min-height:140px;resize:vertical}
         .muted{color:var(--muted);font-size:13px}
+        dl{margin:0}
+        dt{font-weight:700;margin-top:10px}
+        dd{margin:0 0 8px 0;color:var(--muted)}
 
         footer{margin-top:36px;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
 
@@ -89,10 +92,10 @@
     <div class="container">
         <header>
             <div class="brand">
-                <div class="avatar">YN</div>
+                <div class="avatar">JAP</div>
                 <div>
-                    <div style="font-weight:700">Your Name</div>
-                    <div class="muted" style="font-size:13px">Frontend Engineer • UI/UX • Accessibility</div>
+                    <div style="font-weight:700">Javid Ahmad Parray</div>
+                    <div class="muted" style="font-size:13px">Assistant Professor • Computer Science</div>
                 </div>
             </div>
 
@@ -100,6 +103,7 @@
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#about">About</a>
+                <a href="#resume">Resume</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
@@ -107,22 +111,26 @@
         <main>
             <section class="hero" id="home" aria-labelledby="intro-heading">
                 <div class="intro">
-                    <h1 id="intro-heading">Hi — I'm Your Name. I build accessible, performant web apps.</h1>
-                    <p class="lead">I design and develop production-grade interfaces with a focus on usability, performance, and clean code.</p>
+                    <h1 id="intro-heading">Hi — I'm Dr. Javid Ahmad Parray. Assistant Professor in Computer Science.</h1>
+                    <p class="lead">Teaching, mentoring, and building dependable software solutions. Interests include AI prompt engineering, NLP, and practical CS education.</p>
                     <div class="cta">
-                        <a class="btn" href="#contact">Work with me</a>
-                        <a class="btn outline" href="#projects">View projects</a>
+                        <a class="btn" href="#contact">Contact</a>
+                        <a class="btn outline" href="#resume">View resume</a>
                     </div>
 
-                    <div style="margin-top:18px" class="muted">Location: City, Country • Open to remote</div>
+                    <div style="margin-top:18px" class="muted">Location: Jablipora, Bijbehara, Anantnag, Kashmir • Open to collaborations</div>
                 </div>
 
                 <aside class="card" aria-label="Profile summary">
                     <h3 style="margin:0 0 8px 0">Quick summary</h3>
-                    <p class="muted" style="margin:0 0 12px 0">Full-stack friendly. Prefer building small teams, shipping iteratively, and automating tests & CI.</p>
+                    <p class="muted" style="margin:0 0 12px 0">Assistant Professor with long-standing teaching and administrative experience in Computer Science. Works part-time on AI projects (prompt engineering, NLP).</p>
                     <div style="display:flex;gap:8px;flex-wrap:wrap">
                         <div class="muted" style="font-size:13px">Email</div>
-                        <div style="font-weight:700">you@domain.com</div>
+                        <div style="font-weight:700">javid6048@gmail.com</div>
+                    </div>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+                        <div class="muted" style="font-size:13px">Contact</div>
+                        <div style="font-weight:700">+91 78895 26926</div>
                     </div>
                 </aside>
             </section>
@@ -132,33 +140,23 @@
                 <div class="grid">
                     <article class="card" aria-labelledby="p1">
                         <div class="project-thumb">Project A</div>
-                        <h3 id="p1" style="margin:0 0 8px 0">E-commerce UI</h3>
-                        <p class="muted" style="margin:0 0 12px 0">Design system, responsive cart flow, and performance optimizations.</p>
+                        <h3 id="p1" style="margin:0 0 8px 0">E-learning & AI PoC</h3>
+                        <p class="muted" style="margin:0 0 12px 0">Educational tools, prompt engineering experiments, and small AI integrations.</p>
                         <div class="tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Tailwind</span>
-                            <span class="tag">Accessibility</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Prompt Engineering</span>
+                            <span class="tag">Education</span>
                         </div>
                     </article>
 
                     <article class="card" aria-labelledby="p2">
                         <div class="project-thumb">Project B</div>
-                        <h3 id="p2" style="margin:0 0 8px 0">Realtime Dashboard</h3>
-                        <p class="muted" style="margin:0 0 12px 0">Websockets, charts, and telemetry ingestion pipeline.</p>
+                        <h3 id="p2" style="margin:0 0 8px 0">Academic Tools</h3>
+                        <p class="muted" style="margin:0 0 12px 0">Utilities for course management and evaluation automation.</p>
                         <div class="tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">D3</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                    </article>
-
-                    <article class="card" aria-labelledby="p3">
-                        <div class="project-thumb">Project C</div>
-                        <h3 id="p3" style="margin:0 0 8px 0">Micro-frontend PoC</h3>
-                        <p class="muted" style="margin:0 0 12px 0">Evaluated integration patterns and isolation strategies.</p>
-                        <div class="tags">
-                            <span class="tag">Module Federation</span>
-                            <span class="tag">Webpack</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Teaching</span>
                         </div>
                     </article>
                 </div>
@@ -168,14 +166,15 @@
                 <h2 id="skills-heading">Skills</h2>
                 <div class="card">
                     <div class="skills" aria-hidden="false">
-                        <span class="skill">HTML & ARIA</span>
-                        <span class="skill">CSS & Layout</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">TypeScript</span>
-                        <span class="skill">React</span>
-                        <span class="skill">Performance</span>
-                        <span class="skill">Testing</span>
-                        <span class="skill">CI / CD</span>
+                        <span class="skill">C / C++</span>
+                        <span class="skill">Data Structures</span>
+                        <span class="skill">Algorithms</span>
+                        <span class="skill">Computer Graphics</span>
+                        <span class="skill">Networks</span>
+                        <span class="skill">HTML & CSS</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Power BI</span>
+                        <span class="skill">Prompt Engineering</span>
                     </div>
                 </div>
             </section>
@@ -183,11 +182,86 @@
             <section id="about" aria-labelledby="about-heading">
                 <h2 id="about-heading">About</h2>
                 <div class="card">
-                    <p class="muted" style="margin:0 0 12px 0">I focus on creating products that are inclusive and scalable. I enjoy mentoring teams, improving developer experience, and shipping high-quality software.</p>
+                    <p class="muted" style="margin:0 0 12px 0">Focused on inclusive education, mentoring students, and applying practical AI techniques to curricular and research problems.</p>
                     <details>
                         <summary style="cursor:pointer">More details</summary>
-                        <p class="muted" style="margin-top:8px">Experience with modern frameworks, observability tools, and cloud deployments. Open to contract & full-time roles.</p>
+                        <p class="muted" style="margin-top:8px">Experience spans teaching, administration, and hands-on development. Open to workshops, collaborative research, and consulting.</p>
                     </details>
+                </div>
+            </section>
+
+            <section id="resume" aria-labelledby="resume-heading">
+                <h2 id="resume-heading">Resume</h2>
+                <div class="card">
+                    <h3 style="margin-top:0">Contact</h3>
+                    <dl>
+                        <dt>Name</dt><dd>Javid Ahmad Parray</dd>
+                        <dt>Position</dt><dd>Assistant Professor, Department of Computer Science</dd>
+                        <dt>Institution</dt><dd>Iqbal Institute of Technology and Management, Laloo, Hyderpora, Srinagar, Jammu & Kashmir</dd>
+                        <dt>Phone</dt><dd>+91 78895 26926</dd>
+                        <dt>Email</dt><dd>javid6048@gmail.com</dd>
+                        <dt>Address</dt><dd>Jablipora, Bijbehara, Anantnag, Kashmir - 192124</dd>
+                    </dl>
+
+                    <h3 style="margin-top:16px">Achievements</h3>
+                    <ul class="muted" style="margin-top:8px">
+                        <li>Qualified Jammu and Kashmir State Eligibility Test - 2013 in Computer Science and Applications.</li>
+                    </ul>
+
+                    <h3 style="margin-top:16px">Educational Credentials</h3>
+                    <dl>
+                        <dt>M.C.A</dt><dd>Master of Computer Applications — University of Kashmir, Srinagar (65.67%)</dd>
+                        <dt>B.Sc</dt><dd>Bachelor of Science — University of Kashmir, Srinagar (58.27%)</dd>
+                    </dl>
+
+                    <h3 style="margin-top:16px">Academic Experience</h3>
+                    <ul class="muted" style="margin-top:8px">
+                        <li>Assistant Professor, Dept. of Computer Science — Iqbal Institute of Technology and Management (April 2014 – present).</li>
+                        <li>Lecturer, Dept. of Computer Science — Iqbal Institute of Technology and Management (April 2008 – March 2014).</li>
+                        <li>Contractual Lecturer, Computer Science — Govt. Degree College (Boys) Anantnag (May 2005 – Dec 2007).</li>
+                        <li>Freelance (part-time) on AI projects: prompt engineering, response optimization, NLP applications.</li>
+                    </ul>
+
+                    <h3 style="margin-top:16px">Administrative Experience</h3>
+                    <ul class="muted" style="margin-top:8px">
+                        <li>Nodal Officer — Samarth ERP implementation, Iqbal Institute of Technology and Management (Aug 2024 – present).</li>
+                        <li>Head, Dept. of Computer Science — Iqbal Institute of Technology and Management (Jul 2017 – Nov 2023).</li>
+                        <li>BCA Coordinator — Dept. of Computer Science (2014 – Jun 2017).</li>
+                    </ul>
+
+                    <h3 style="margin-top:16px">Training Programs & Certifications</h3>
+                    <ul class="muted" style="margin-top:8px">
+                        <li>Workshop — Database Management Systems, IIT Bombay (Dec 2010).</li>
+                        <li>Workshop — Data Analysis using SPSS, Univ. of Kashmir (Feb 2014).</li>
+                        <li>Workshop — Data Analysis / SPSS and MINITAB, UGC HRDC, AMU (Dec 2015 – Jan 2016).</li>
+                        <li>Online FDP — Cyber Security, Ethical Hacking and Cyber Crime (Jul 2021).</li>
+                        <li>FDP — Building Advanced Data Analytics Applications with Cloud (Sep 2023).</li>
+                        <li>FDP — Building Web Development Solutions with Cloud Computing (Nov 2024).</li>
+                        <li>Power BI for Beginners — Simplilearn (7 Jan 2025).</li>
+                        <li>Generative AI Foundations Certificate — UpGrad & Microsoft (22 Nov 2025).</li>
+                    </ul>
+
+                    <h3 style="margin-top:16px">Teaching Subjects</h3>
+                    <div class="skills" style="margin-top:8px">
+                        <span class="skill">Programming in C/C++</span>
+                        <span class="skill">Data Structures</span>
+                        <span class="skill">Computer Graphics</span>
+                        <span class="skill">Design & Analysis of Algorithms</span>
+                        <span class="skill">Data Communication & Networks</span>
+                        <span class="skill">Numerical Techniques</span>
+                        <span class="skill">Microsoft Office</span>
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Power BI</span>
+                    </div>
+
+                    <h3 style="margin-top:16px">Personal Information</h3>
+                    <dl>
+                        <dt>Father's Name</dt><dd>Gh. Mohi-ud-din Parray</dd>
+                        <dt>Date of Birth</dt><dd>17-02-1972</dd>
+                        <dt>Gender</dt><dd>Male</dd>
+                        <dt>Marital Status</dt><dd>Married</dd>
+                    </dl>
                 </div>
             </section>
 
@@ -196,7 +270,8 @@
                 <div class="contact-grid">
                     <div class="card">
                         <p class="muted">Prefer email? Use the form or send a message directly:</p>
-                        <p style="margin:12px 0 0 0"><strong>you@domain.com</strong></p>
+                        <p style="margin:12px 0 0 0"><strong>javid6048@gmail.com</strong></p>
+                        <p style="margin:6px 0 0 0"><strong>+91 78895 26926</strong></p>
                         <div style="margin-top:18px" class="muted">Social</div>
                         <div style="display:flex;gap:8px;margin-top:8px">
                             <a class="tag" href="#" aria-label="GitHub">GitHub</a>
@@ -210,7 +285,7 @@
                         <input id="name" name="name" required placeholder="Your name" />
 
                         <label for="email" style="margin-top:10px">Email</label>
-                        <input id="email" name="email" type="email" required placeholder="you@domain.com" />
+                        <input id="email" name="email" type="email" required placeholder="you@example.com" />
 
                         <label for="message" style="margin-top:10px">Message</label>
                         <textarea id="message" name="message" required placeholder="Brief message"></textarea>
@@ -225,8 +300,8 @@
         </main>
 
         <footer>
-            <div>© <span id="year"></span> Your Name</div>
-            <div class="muted">Built with clean HTML & CSS — responsive & accessible</div>
+            <div>© <span id="year"></span> Javid Ahmad Parray</div>
+            <div class="muted">Academic profile — responsive & accessible</div>
         </footer>
     </div>
 
@@ -237,23 +312,22 @@
         function handleSubmit(e){
             e.preventDefault();
             const status = document.getElementById('formStatus');
-            status.textContent = 'Sending...';
+            status.textContent = 'Preparing message...';
             const name = encodeURIComponent(e.target.name.value.trim());
             const email = encodeURIComponent(e.target.email.value.trim());
             const message = encodeURIComponent(e.target.message.value.trim());
-            // mailto fallback — replace with API endpoint in production
-            const subject = encodeURIComponent('Portfolio contact from ' + name);
+            const subject = encodeURIComponent('Contact from portfolio — ' + (name || 'Anonymous'));
             const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
-            const mailto = `mailto:you@domain.com?subject=${subject}&body=${body}`;
+            const mailto = `mailto:javid6048@gmail.com?subject=${subject}&body=${body}`;
             // open mail client
             window.location.href = mailto;
-            status.textContent = 'Opened mail client. If nothing happened, email you@domain.com directly.';
+            status.textContent = 'Opened mail client. If nothing happened, email javid6048@gmail.com directly.';
             setTimeout(()=>status.textContent='',4000);
         }
 
         // keyboard shortcut to focus contact form (press 'c')
         window.addEventListener('keydown', (e) => {
-            if (e.key.toLowerCase() === 'c' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+            if (e.key && e.key.toLowerCase() === 'c' && document.activeElement && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) {
                 document.getElementById('name').focus();
             }
         });
